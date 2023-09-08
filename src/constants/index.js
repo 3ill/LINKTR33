@@ -9,7 +9,7 @@ export const links = [
 
   {
     img: twitter,
-    url: 'https://twitter.com/longlivethril',
+    url: 'https://twitter.com/longlivethrill',
     label: 'X',
   },
 
