@@ -13,7 +13,7 @@ const LetsConnect = () => {
       <div className="flex flex-col justify-center items-center">
         <TypingText
           title="Connect With Me"
-          textStyles="text-white font-Azeret font-semibold text-[20px] md:text-[40px] tracking-widest"
+          textStyles="text-white font-Azeret font-extrabold text-[20px] md:text-[40px] tracking-widest"
         />
       </div>
     </motion.section>
