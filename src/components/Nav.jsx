@@ -17,7 +17,7 @@ const Nav = () => {
             alt="logo"
             className="w-[62.384px] h-[58px] md:w-[80px] md:h-[70px]"
           />
-          <h1 className="text-white font-Azeret text-[20px] md:text-[40px] font-semibold tracking-wider">
+          <h1 className="text-white font-Azeret text-[25px] md:text-[40px] font-semibold tracking-wider">
             | Chikezie Egbu{' '}
           </h1>
         </div>
