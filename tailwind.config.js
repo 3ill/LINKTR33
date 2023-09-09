@@ -33,6 +33,7 @@ export default {
       },
       backgroundImage: {
         hero: "url('assets/herobg.png')",
+        villan: "url('assets/villan.jpg')",
       },
       screens: {
         wide: '1440px',
