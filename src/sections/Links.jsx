@@ -1,3 +1,6 @@
+import { motion } from 'framer-motion';
+import { staggerContainer, fadeIn } from '../utils/motion';
+
 import { links } from '../constants';
 
 const Links = () => {
@@ -6,11 +9,18 @@ const Links = () => {
     window.open(link, '_blank');
   };
   return (
-    <section className="padding relative">
+    <motion.section
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.75 }}
+      className="padding relative"
+    >
       <div className="flex flex-col justify-center items-center">
         <div className="w-[348px] md:w-[548px] md:h-[620px] h-[420px] bg-[#7e7e7e]/20 rounded-[12px] flex flex-col gap-y-7 justify-center items-center padding">
-          {links.map((link) => (
-            <div
+          {links.map((link, index) => (
+            <motion.div
+              variants={fadeIn('down', 'spring', index * 0.5, 0.75)}
               key={link.url}
               className="flex flex-row gap-[21px] items-center"
             >
@@ -27,11 +37,11 @@ const Links = () => {
                   {link.label}
                 </h1>
               </button>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
