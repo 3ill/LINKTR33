@@ -5,5 +5,6 @@ import twitter from './TwitterX.png';
 import git from './Code Fork.png';
 import logo from './thrill.png';
 import connect from './USB Connector.png';
+import telegram from './Telegram App.png';
 
-export { github, instagram, linkedin, twitter, git, logo, connect };
+export { github, instagram, linkedin, twitter, git, logo, connect, telegram };

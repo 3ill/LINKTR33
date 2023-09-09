@@ -1,10 +1,16 @@
-import { instagram, twitter, linkedin, github } from '../assets';
+import { instagram, twitter, linkedin, github, telegram } from '../assets';
 
 export const links = [
   {
     img: instagram,
     url: 'https://www.instagram.com/3illBaby/',
     label: 'Instagram',
+  },
+
+  {
+    img: telegram,
+    url: 'https://t.me//Longlive3ill',
+    label: 'Telegram',
   },
 
   {
