@@ -17,7 +17,7 @@ const Links = () => {
       className="padding relative"
     >
       <div className="flex flex-col justify-center items-center">
-        <div className="w-[348px] md:w-[548px] md:h-[620px] h-[420px] bg-[#7e7e7e]/20 rounded-[12px] flex flex-col gap-y-7 justify-center items-center padding">
+        <div className="w-[348px] md:w-[548px] md:h-[620px] h-[420px] bg-[#7e7e7e]/20 rounded-[12px] flex flex-col gap-y-7 justify-center items-center padding shadow-lg">
           {links.map((link, index) => (
             <motion.div
               variants={fadeIn('down', 'spring', index * 0.5, 0.75)}

@@ -3,7 +3,7 @@ import { LetsConnect, Links, Footer } from './sections';
 
 const App = () => {
   return (
-    <main >
+    <main>
       <Nav />
       <LetsConnect />
       <Links />

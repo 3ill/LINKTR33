@@ -10,7 +10,7 @@ const LetsConnect = () => {
       viewport={{ once: false, amount: 0.75 }}
       className="padding-t"
     >
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center relative">
         <TypingText
           title="Connect With Me"
           textStyles="text-white font-Azeret font-extrabold text-[20px] md:text-[40px] tracking-widest"

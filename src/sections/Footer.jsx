@@ -12,13 +12,17 @@ const Footer = () => {
       className="padding"
     >
       <div className="flex flex-col justify-center items-center">
-        <p className="text-[#ababab] font-Azeret text-[12px] md:text-[18px] font-semibold tracking-[2.4px]">
-          All rights reserved
-        </p>
         <TypingText
-          title="preciousegbu@gmail.com"
-          textStyles="text-white font-Azeret text-[12px] md:text-[18px] font-semibold tracking-[2.4px] mt-[5px]"
+          title="All rights reserved"
+          textStyles="text-[#ababab] font-Azeret text-[12px] md:text-[18px] font-semibold tracking-[2.4px] mt-[5px]"
         />
+
+        <a
+          href="mailto: preciousegbu@gmail.com ? subject: Mailed From Link Tree"
+          className="text-white font-Azeret text-[12px] md:text-[18px] font-semibold tracking-[2.4px]"
+        >
+          preciousegbu@gmail.com
+        </a>
       </div>
     </motion.footer>
   );
