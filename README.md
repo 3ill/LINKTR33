@@ -1,8 +1,41 @@
-# React + Vite
+<h1 align="center">My Link Tree</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the codebase for my linktree. This is a webpage containing one click navigation to all my social media accounts.
 
-Currently, two official plugins are available:
+<div align="center"> <img src="https://github.com/3ill/3ill-s-Portfolio/blob/main/src/assets/logo.png" width="200" height="200"  />
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Run Locally ↩
+
+Clone the project
+
+```bash
+  git clone https://github.com/3ill/LINKTR33.git
+```
+
+Go to the project directory
+
+```bash
+  cd LINKTR33
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run dev
+```
+
+## Features ↩
+
+- Fullscreen mode
+- Cross platform
+
+## Tech Stack ↩
+
+` React, Framer-Motion, TailwindCSS`
