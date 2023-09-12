@@ -34,6 +34,8 @@ export default {
       backgroundImage: {
         hero: "url('assets/herobg.png')",
         villan: "url('assets/grid.svg')",
+        gradient1: "url('assets/purpleGradient1.jpg')",
+        gradient2: "url('assets/purpleGradient2.jpg')",
       },
       screens: {
         wide: '1440px',
