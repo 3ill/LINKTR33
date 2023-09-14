@@ -10,14 +10,20 @@ const LetsConnect = () => {
       viewport={{ once: false, amount: 0.75 }}
       className="padding-t"
     >
-      <div className="flex flex-col justify-center items-center relative">
+      <div className={connectStyles.connectContainer}>
         <TypingText
           title="Connect With Me"
-          textStyles="text-white font-Azeret font-extrabold text-[20px] md:text-[40px] tracking-widest"
+          textStyles={connectStyles.textStyles}
         />
       </div>
     </motion.section>
   );
+};
+
+const connectStyles = {
+  connectContainer: 'flex flex-col justify-center items-center relative',
+  textStyles:
+    'text-white font-Azeret font-extrabold text-[20px] md:text-[40px] tracking-widest',
 };
 
 export default LetsConnect;

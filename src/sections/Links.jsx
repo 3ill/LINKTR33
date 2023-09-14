@@ -16,8 +16,8 @@ const Links = () => {
       viewport={{ once: false, amount: 0.75 }}
       className="padding relative"
     >
-      <div className="flex flex-col justify-center items-center">
-        <div className="w-[348px] md:w-[548px] md:h-[620px] h-[420px] bg-[#7e7e7e]/20 rounded-[12px] flex flex-col gap-y-7 justify-center items-center padding shadow-lg">
+      <div className={linkStyles.linkContainer}>
+        <div className={linkStyles.linkWrapper}>
           {links.map((link, index) => (
             <motion.div
               variants={fadeIn('down', 'spring', index * 0.5, 0.75)}
@@ -31,11 +31,9 @@ const Links = () => {
               />
               <button
                 onClick={() => linkClicked(link)}
-                className="w-[200px] h-[40px] md:h-[60px] rounded-[10px] bg-[#ffff]/30 flex justify-center items-center shadow-lg group"
+                className={linkStyles.buttonStyle}
               >
-                <h1 className="text-white font-Azeret text-[14px] md:text-[18px] font-semibold group-hover:pulse-animation">
-                  {link.label}
-                </h1>
+                <h1 className={linkStyles.labelStyle}>{link.label}</h1>
               </button>
             </motion.div>
           ))}
@@ -43,6 +41,16 @@ const Links = () => {
       </div>
     </motion.section>
   );
+};
+
+const linkStyles = {
+  linkContainer: 'flex flex-col justify-center items-center',
+  linkWrapper:
+    'w-[348px] md:w-[548px] md:h-[620px] h-[420px] bg-[#7e7e7e]/20 rounded-[12px] flex flex-col gap-y-7 justify-center items-center padding shadow-lg',
+  buttonStyle:
+    'w-[200px] h-[40px] md:h-[60px] rounded-[10px] bg-[#ffff]/30 flex justify-center items-center shadow-lg group',
+  labelStyle:
+    'text-white font-Azeret text-[14px] md:text-[18px] font-semibold group-hover:pulse-animation',
 };
 
 export default Links;

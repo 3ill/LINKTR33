@@ -10,16 +10,10 @@ const Nav = () => {
       whileInView="show"
       className="padding"
     >
-      <section className="flex flex-row justify-between items-center">
-        <div className="flex flex-row items-center">
-          <img
-            src={logo}
-            alt="logo"
-            className="w-[62.384px] h-[58px] md:w-[80px] md:h-[70px]"
-          />
-          <h1 className="text-white font-orbitron text-[20px] md:text-[40px] font-extrabold tracking-wider">
-            | Chikezie Egbu{' '}
-          </h1>
+      <section className={navStyles.sectionContainer}>
+        <div className={navStyles.navItems}>
+          <img src={logo} alt="logo" className={navStyles.logoStyles} />
+          <h1 className={navStyles.headerStyles}>| Chikezie Egbu </h1>
         </div>
 
         <div>
@@ -28,6 +22,14 @@ const Nav = () => {
       </section>
     </motion.nav>
   );
+};
+
+const navStyles = {
+  sectionContainer: 'flex flex-row justify-between items-center',
+  navItems: 'flex flex-row items-center',
+  logoStyles: 'w-[62.384px] h-[58px] md:w-[80px] md:h-[70px]',
+  headerStyles:
+    'text-white font-orbitron text-[20px] md:text-[40px] font-extrabold tracking-wider',
 };
 
 export default Nav;

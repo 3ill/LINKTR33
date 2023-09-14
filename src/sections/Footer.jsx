@@ -11,21 +11,29 @@ const Footer = () => {
       viewport={{ once: false, amount: 0.75 }}
       className="padding"
     >
-      <div className="flex flex-col justify-center items-center">
+      <div className={footerStyles.footerWrapper}>
         <TypingText
           title="All rights reserved"
-          textStyles="text-[#ababab] font-Azeret text-[12px] md:text-[18px] font-semibold tracking-[2.4px] mt-[5px]"
+          textStyles={footerStyles.footerText}
         />
 
         <a
           href="mailto: preciousegbu@gmail.com ? subject: Mailed From Link Tree"
-          className="text-white font-Azeret text-[12px] md:text-[18px] font-semibold tracking-[2.4px]"
+          className={footerStyles.mailTextStyle}
         >
           preciousegbu@gmail.com
         </a>
       </div>
     </motion.footer>
   );
+};
+
+const footerStyles = {
+  footerWrapper: 'flex flex-col justify-center items-center',
+  footerText:
+    'text-[#ababab] font-Azeret text-[12px] md:text-[18px] font-semibold tracking-[2.4px] mt-[5px]',
+  mailTextStyle:
+    'text-white font-Azeret text-[12px] md:text-[18px] font-semibold tracking-[2.4px]',
 };
 
 export default Footer;
