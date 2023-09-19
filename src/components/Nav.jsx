@@ -13,7 +13,7 @@ const Nav = () => {
       <section className={navStyles.sectionContainer}>
         <div className={navStyles.navItems}>
           <img src={logo} alt="logo" className={navStyles.logoStyles} />
-          <h1 className={navStyles.headerStyles}>| Chikezie Egbu </h1>
+          <h1 className={navStyles.headerStyles}>| Chikezie </h1>
         </div>
 
         <div>
@@ -29,7 +29,7 @@ const navStyles = {
   navItems: 'flex flex-row items-center',
   logoStyles: 'w-[62.384px] h-[58px] md:w-[80px] md:h-[70px]',
   headerStyles:
-    'text-white font-orbitron text-[20px] md:text-[40px] font-extrabold tracking-wider',
+    'text-white font-lexend purple-gradient text-[30px] md:text-[50px] font-extrabold tracking-wider',
 };
 
 export default Nav;

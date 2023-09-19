@@ -26,7 +26,7 @@ const Links = () => {
             >
               <img
                 src={link.img}
-                className="w-[40px] h-[40px] md:w-[80px] md:h-[80px] hover:animate-pulse"
+                className="w-[40px] h-[40px] md:w-[80px] md:h-[80px]  hover:animate-pulse"
                 onClick={() => linkClicked(link)}
               />
               <button
@@ -46,11 +46,11 @@ const Links = () => {
 const linkStyles = {
   linkContainer: 'flex flex-col justify-center items-center',
   linkWrapper:
-    'w-[348px] md:w-[548px] md:h-[620px] h-[420px] bg-[#7e7e7e]/20 rounded-[12px] flex flex-col gap-y-7 justify-center items-center padding shadow-lg',
+    'w-[348px] md:w-[548px] md:h-[620px] h-[420px] rounded-[12px]  flex flex-col gap-y-7 justify-center items-center padding shadow-lg',
   buttonStyle:
-    'w-[200px] h-[40px] md:h-[60px] rounded-[10px] bg-[#ffff]/30 flex justify-center items-center shadow-lg group',
+    'w-[200px] h-[40px] md:h-[60px] rounded-[10px] card-gradient flex justify-center items-center shadow-lg group',
   labelStyle:
-    'text-white font-Azeret text-[14px] md:text-[18px] font-semibold group-hover:pulse-animation',
+    'gray-gradient font-work text-[15px] md:text-[18px] font-semibold group-hover:pulse-animation',
 };
 
 export default Links;

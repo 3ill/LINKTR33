@@ -15,10 +15,9 @@ export default {
     },
     extend: {
       fontFamily: {
-        palanquin: ['Palanquin', 'sans-serif'],
-        montserrat: ['Montserrat', 'sans-serif'],
-        orbitron: ['Orbitron', 'sans-serif'],
         Azeret: ['Azeret Mono', 'Monospace'],
+        work: ['Work Sans', 'sans-serif'],
+        lexend: ['Lexend Deca', 'sans-serf'],
       },
       colors: {
         primary: '#ECEEFF',

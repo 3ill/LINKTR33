@@ -31,9 +31,9 @@ const Footer = () => {
 const footerStyles = {
   footerWrapper: 'flex flex-col justify-center items-center',
   footerText:
-    'text-[#ababab] font-Azeret text-[12px] md:text-[18px] font-semibold tracking-[2.4px] mt-[5px]',
+    'text-[#ababab] font-lexend gray-gradient text-[12px] md:text-[18px] font-semibold tracking-[2.4px] mt-[5px]',
   mailTextStyle:
-    'text-white font-Azeret text-[12px] md:text-[18px] font-semibold tracking-[2.4px]',
+    'text-white font-lexend gray-gradient text-[12px] md:text-[18px] font-semibold tracking-[2.4px]',
 };
 
 export default Footer;

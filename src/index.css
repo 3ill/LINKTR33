@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -44,6 +43,22 @@
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+.card-gradient {
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+.purple-gradient {
+  background: linear-gradient(to right, #ec77ab 0%, #7873f5 100%);
+  -webkit-background-clip: text; /* Clip text to the gradient */
+  color: transparent; /* Make the text color transparent */
+}
+
+.gray-gradient {
+  background: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+  -webkit-background-clip: text; /* Clip text to the gradient */
+  color: transparent; /* Make the text color transparent */
 }
 
 .animate-slide-down {

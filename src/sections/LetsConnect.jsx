@@ -23,7 +23,7 @@ const LetsConnect = () => {
 const connectStyles = {
   connectContainer: 'flex flex-col justify-center items-center relative',
   textStyles:
-    'text-white font-Azeret font-extrabold text-[20px] md:text-[40px] tracking-widest',
+    'text-white font-lexend gray-gradient font-extrabold text-[27px] md:text-[40px] tracking-wider',
 };
 
 export default LetsConnect;
