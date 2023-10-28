@@ -6,5 +6,16 @@ import git from './Code Fork.png';
 import logo from './thrill.png';
 import connect from './USB Connector.png';
 import telegram from './Telegram App.png';
+import profile from './baby.png';
 
-export { github, instagram, linkedin, twitter, git, logo, connect, telegram };
+export {
+  github,
+  instagram,
+  linkedin,
+  twitter,
+  git,
+  logo,
+  connect,
+  telegram,
+  profile,
+};
