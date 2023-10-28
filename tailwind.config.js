@@ -18,6 +18,7 @@ export default {
         Azeret: ['Azeret Mono', 'Monospace'],
         work: ['Work Sans', 'sans-serif'],
         lexend: ['Lexend Deca', 'sans-serf'],
+        satoshi: ['Satoshi', 'sans-serif'],
       },
       colors: {
         primary: '#ECEEFF',

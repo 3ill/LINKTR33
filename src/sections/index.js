@@ -1,5 +1,6 @@
 import LetsConnect from './LetsConnect';
-import Links from './Links';
 import Footer from './Footer';
+import Hero from './Hero';
+import About from './About';
 
-export { LetsConnect, Links, Footer };
+export { LetsConnect, Footer, Hero, About };

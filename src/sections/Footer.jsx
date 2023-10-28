@@ -1,6 +1,8 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 import { staggerContainer } from '../utils/motion';
 import { TypingText } from '../components/CustomTexts';
+import { footerLinks } from '../constants';
 
 const Footer = () => {
   return (
@@ -9,31 +11,40 @@ const Footer = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.75 }}
-      className="padding"
+      className="sm:px-16 px-8 sm:py-18 py-12 flex flex-col bg-gray-400 bg-opacity-60 backdrop-blur-sm"
     >
-      <div className={footerStyles.footerWrapper}>
+      <div>
         <TypingText
-          title="All rights reserved"
-          textStyles={footerStyles.footerText}
+          title="DSA CORP"
+          textStyles="text-white font-satoshi  font-semibold text-[15px] md:text-[18px]"
         />
 
-        <a
-          href="mailto: preciousegbu@gmail.com ? subject: Mailed From Link Tree"
-          className={footerStyles.mailTextStyle}
-        >
-          preciousegbu@gmail.com
-        </a>
+        <div className="flex flex-col mt-3 tracking-wide">
+          <a
+            href="mailto: preciousegbu@gmail.com ? subject: Mailed From Link Tree"
+            className="text-white font-satoshi   font-medium text-[12px] md:text-[15px]"
+          >
+            preciousegbu@gmail.com
+          </a>
+          {footerLinks.map((link, index) => (
+            <React.Fragment key={index}>
+              <a
+                href={link.url}
+                className="text-gray-100 font-satoshi text-[12px] md:text-[15px]"
+              >
+                {link.label}
+              </a>
+            </React.Fragment>
+          ))}
+        </div>
+        <div className="flex justify-center items-center">
+          <p className="font-semibold font-Azeret text-white text-[15px]">
+            Building The Future
+          </p>
+        </div>
       </div>
     </motion.footer>
   );
-};
-
-const footerStyles = {
-  footerWrapper: 'flex flex-col justify-center items-center',
-  footerText:
-    'text-[#ababab] font-lexend gray-gradient text-[12px] md:text-[18px] font-semibold tracking-[2.4px] mt-[5px]',
-  mailTextStyle:
-    'text-white font-lexend gray-gradient text-[12px] md:text-[18px] font-semibold tracking-[2.4px]',
 };
 
 export default Footer;
