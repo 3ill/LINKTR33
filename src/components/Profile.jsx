@@ -3,7 +3,7 @@ import { Tilt } from 'react-tilt';
 
 const Profile = () => {
   return (
-    <section className="absolute left-5 top-[120px] md:top-[170px] md:left-[100px] ">
+    <section className="absolute left-5 top-[120px] md:top-[170px] md:left-[100px] lg:top-[200px] ">
       <Tilt
         options={{
           max: 45,

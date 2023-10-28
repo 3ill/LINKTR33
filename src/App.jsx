@@ -4,7 +4,7 @@ import { Hero, About, LetsConnect, Footer } from './sections';
 const App = () => {
   return (
     <main>
-      <section className="xl:padding-l wide:padding-r">
+      <section>
         <Hero />
       </section>
       <section>
