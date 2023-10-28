@@ -31,3 +31,31 @@ export const links = [
     label: 'GitHub',
   },
 ];
+
+export const footerLinks = [
+  {
+    label: 'About',
+    url: '#about',
+  },
+  {
+    label: 'Twitter',
+    url: 'https://t.me//Longlive3ill',
+  },
+  {
+    label: 'Instagram',
+    url: 'https://www.instagram.com/3illBaby/',
+  },
+
+  {
+    label: 'Telegram',
+    url: 'https://t.me//Longlive3ill',
+  },
+  {
+    label: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/3illbaby',
+  },
+  {
+    label: 'GitHub',
+    url: 'https://github.com/3ill',
+  },
+];
