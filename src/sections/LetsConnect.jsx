@@ -23,14 +23,12 @@ const LetsConnect = () => {
         <div className="flex flex-row gap-5 mt-3">
           {links.map((link, index) => (
             <React.Fragment key={index}>
-              <motion.button
-                variants={planetVariants('left')}
-                onClick={handleLinkClicked(link.url)}
-              >
+              <motion.button variants={planetVariants('left')}>
                 <img
                   src={link.img}
                   alt={link.label}
                   className="w-[50px] h-[50px] lg:w-[80px] lg:h-[80px] hover:animate-pulse hover:scale-110 active:scale-105 transition"
+                  onClick={() => handleLinkClicked(link.url)}
                 />
               </motion.button>
             </React.Fragment>
