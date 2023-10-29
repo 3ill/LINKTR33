@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { staggerContainer, planetVariants } from '../utils/motion';
 import { TitleText } from '../components/CustomTexts';
 import { links } from '../constants';
+import { handleLinkClicked } from '../../actions/utils';
 
 const LetsConnect = () => {
   return (
@@ -22,7 +23,10 @@ const LetsConnect = () => {
         <div className="flex flex-row gap-5 mt-3">
           {links.map((link, index) => (
             <React.Fragment key={index}>
-              <motion.button variants={planetVariants('left')}>
+              <motion.button
+                variants={planetVariants('left')}
+                onClick={handleLinkClicked(link.url)}
+              >
                 <img
                   src={link.img}
                   alt={link.label}
